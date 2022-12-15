@@ -1,0 +1,26 @@
+<!--Section 19-->
+<!--Any suggestions to improve the program implementation   -->
+
+<div class="row" id="upos-19">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex">
+                    <h4 class="card-title">Section 19:</h4>
+                    <p class="card-title-desc">Any suggestions to improve the program implementation</p>
+                </div>
+                <form method='POST' class="needs-validation" enctype="multipart/form-data" novalidate>
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <!-- <label for="exampleInputEmail1">Successes:</label><br> -->
+                        <textarea id="formmessage" name="suggestions" class="form-control" rows="3" placeholder="Text is coming...." ></textarea>
+                        <div class="invalid-feedback">
+                            Please provide a valid suggestions.
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success waves-effect waves-light w-md">Save</button>
+                </form>
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div> <!-- end row -->
